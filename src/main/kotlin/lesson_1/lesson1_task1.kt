@@ -1,5 +1,6 @@
 package org.example.lesson_1
 
 fun main() {
-    println("Первый урок первое задание")
+    var ordersQuantity: Int = 75
+    val successBuyingMessage : String = "Спасибо за заказ!"
 }
