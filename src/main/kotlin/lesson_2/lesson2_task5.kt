@@ -8,5 +8,5 @@ fun main() {
     val rateDecimal = interestRate / 100.0
 
     val finalAmount = clientDeposit * Math.pow(1 + rateDecimal, depositPeriodYears.toDouble())
-    println(finalAmount)
+    println(String.format("%.3f", finalAmount))
 }
