@@ -1,7 +1,6 @@
 package org.example.lesson_4
 
 fun main() {
-
     val trainingDay = 5
 
     val isArmDay = trainingDay % 2 != 0
@@ -9,7 +8,6 @@ fun main() {
     val isLegExercise = !isArmDay
     val isBackExercise = !isArmDay
     val isAbsExercise = isArmDay
-
 
     println(
                 "Упражнения для рук:       $isArmExercise\n" +
