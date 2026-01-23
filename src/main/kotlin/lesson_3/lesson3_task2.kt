@@ -2,14 +2,15 @@ package org.example.lesson_3
 
 fun main() {
     val girlName = "Татьяна"
-    val lastNameBeforeMarriage = "Андреева"
     val girlMiddleName = "Сергеевна"
-
-    val lastNameAfterMarriage = "Сидорова"
+    var girlLastName = "Андреева"
 
     val ageBeforeMarriage = 20
     val ageAfterMarriage = 22
 
-    println("$lastNameBeforeMarriage $girlName $girlMiddleName, $ageBeforeMarriage")
-    println("$lastNameAfterMarriage $girlName $girlMiddleName, $ageAfterMarriage")
+    println("$girlLastName $girlName $girlMiddleName, $ageBeforeMarriage")
+
+    girlLastName = "Сидорова"
+
+    println("$girlLastName $girlName $girlMiddleName, $ageAfterMarriage")
 }
