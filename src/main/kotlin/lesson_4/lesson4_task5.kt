@@ -9,7 +9,6 @@ const val PROVISION_BOXES_QUANTITY = 50
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    // Ввод данных с консоли
     println("Введите наличие повреждений корпуса (true - есть, false - нет):")
     val hasDamage = scanner.nextBoolean()
 
