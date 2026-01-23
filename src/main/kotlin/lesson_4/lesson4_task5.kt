@@ -21,8 +21,9 @@ fun main() {
     println("Введите благоприятность метеоусловий (true - благоприятные, false - неблагоприятные):")
     val isWeatherGood = scanner.nextBoolean()
 
-    val canSail = (!hasDamage && crewQuantity >= MIN_CREW_QUANTITY && crewQuantity <= MAX_CREW_QUANTITY && provisionBoxes > PROVISION_BOXES_QUANTITY) ||
-            (hasDamage && crewQuantity == MAX_CREW_QUANTITY && isWeatherGood && provisionBoxes >= PROVISION_BOXES_QUANTITY)
+    val canSail =
+        (!hasDamage && crewQuantity >= MIN_CREW_QUANTITY && crewQuantity <= MAX_CREW_QUANTITY && provisionBoxes > PROVISION_BOXES_QUANTITY) ||
+                (hasDamage && crewQuantity == MAX_CREW_QUANTITY && isWeatherGood && provisionBoxes >= PROVISION_BOXES_QUANTITY)
 
     println("Может ли корабль отправиться в плавание? $canSail")
 }
