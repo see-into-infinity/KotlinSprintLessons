@@ -1,6 +1,5 @@
 package org.example.lesson_5
 
-import kotlin.random.Random
 
 const val FIRST_WINNING_NUMBER = 7
 const val SECOND_WINNING_NUMBER = 21
