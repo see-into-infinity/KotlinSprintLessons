@@ -15,10 +15,10 @@ fun main() {
     println("Правильные числа для победы: $FIRST_WINNING_NUMBER и $SECOND_WINNING_NUMBER")
 
     var countCorrectNumbers = 0
-    if(FIRST_WINNING_NUMBER == userFirstInputNumber || SECOND_WINNING_NUMBER == userFirstInputNumber) {
-         countCorrectNumbers++
+    if (FIRST_WINNING_NUMBER == userFirstInputNumber || SECOND_WINNING_NUMBER == userFirstInputNumber) {
+        countCorrectNumbers++
     }
-    if(SECOND_WINNING_NUMBER == userSecondInputNumber || FIRST_WINNING_NUMBER == userSecondInputNumber) {
+    if (SECOND_WINNING_NUMBER == userSecondInputNumber || FIRST_WINNING_NUMBER == userSecondInputNumber) {
         countCorrectNumbers++
     }
     when (countCorrectNumbers) {
