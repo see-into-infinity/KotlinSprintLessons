@@ -1,8 +1,10 @@
 package org.example.lesson_5
 
+const val INITIAL_NUMBER_IN_RANGE = 0
+const val END_NUMBER_IN_RANGE = 42
 fun main() {
-    println("Угадайте три числа от 0 до 42!")
-    val winningNumbers = (0..42).shuffled().take(3).sorted()
+    println("Угадайте три числа от $INITIAL_NUMBER_IN_RANGE до $END_NUMBER_IN_RANGE!")
+    val winningNumbers = (INITIAL_NUMBER_IN_RANGE..END_NUMBER_IN_RANGE).shuffled().take(3).sorted()
 
     println("Введите первое число:")
     val userFirstNumberInput = readln().toInt()
