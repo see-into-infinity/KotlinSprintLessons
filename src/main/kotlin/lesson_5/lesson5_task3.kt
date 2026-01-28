@@ -15,10 +15,15 @@ fun main() {
 
     println("Правильные числа для победы: $FIRST_WINNING_NUMBER и $SECOND_WINNING_NUMBER")
 
-    val userNumbers = setOf(userFirstInputNumber, userSecondInputNumber)
-    val winningNumbers = setOf(FIRST_WINNING_NUMBER, SECOND_WINNING_NUMBER)
+    val userNumbers = listOf(userFirstInputNumber, userSecondInputNumber)
 
-    val countCorrectNumbers = userNumbers.intersect(winningNumbers).size
+    var countCorrectNumbers = 0
+
+    for (number in userNumbers) {
+        if (number == FIRST_WINNING_NUMBER || number == SECOND_WINNING_NUMBER) {
+            countCorrectNumbers++
+        }
+    }
 
     when (countCorrectNumbers) {
         2 -> println("Поздравляем! Вы выиграли главный приз!")
